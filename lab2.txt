@@ -1,0 +1,30 @@
+# Lab2 Objectives:
+
+# create directory called "iti-0
+    mkdir iti-0
+    ls -l
+	
+# create file called "file1.txt" inside iti-0 directory with content "hell9 all"
+	cd ~/iti-0
+    pwd
+    touch file1.txt
+    ls
+    cat > file1.txt
+    hell9 all
+    cat file1.txt
+# change character "9" to "o" and redirect it to new file called "file2.txt"
+	sed 's/9/o/g' file1.txt > file2.txt
+    cat file2.txt   
+# delete "file1.txt"
+	rm file1.txt
+# using ls command list directories inside /var and redirect the output to iti-0/listing.txt file
+	ls /var > listing.txt
+    ls
+    cat listing.txt
+# rename listing.txt file to list_output.txt
+	mv listing.txt list_output.txt
+# number all lines in list_output.txt`and redirect it to list_output_number.txt
+	nl list_output.txt > list_output_number.txt 
+    cat list_output_number.txt
+# print the last 5 lines of list_output_number.txt file 
+    sed -n '10,14p' list_output_number.txt
